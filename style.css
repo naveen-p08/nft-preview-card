@@ -12,6 +12,10 @@ html {
     font-family: 'Outfit', sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
+
 :root {
     --clr-text-body: 215 51% 70%;
     --clr-text-highligh: 178 100% 50%;
@@ -29,7 +33,7 @@ html {
     --fs-900: 2.8rem;
 }
 
-@media (min-width: 45em) {
+@media (max-width: 45em) {
     :root {
         --fs-400: 1.6rem;
     }
@@ -40,4 +44,27 @@ body {
     font-weight: var(--fw-400);
     color: hsl(var(--clr-text-body));
     background: hsl(var(--clr-bg-body));
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 36rem;
+    height: 60rem;
+}
+
+
+
+
+
+
+@media (max-width: 45em) {
+
+    .card {
+        width: 33rem;
+        height: 55rem;
+    }
 }
