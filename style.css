@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    --clr-text-body: 215 51% 70%;
+    --clr-text-highligh: 178 100% 50%;
+    --clr-white: 0 0% 100%;
+    --clr-blue-line: 215 32% 27%;
+    --clr-bg-body: 217 54% 11%;
+    --clr-bg-card: 216 50% 16%;
+
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-600: 600;
+    
+    --fs-300: 1.5rem;
+    --fs-400: 1.8rem;
+    --fs-900: 2.8rem;
+}
+
+body {
+    font-size: var(--fs-400);
+    font-weight: var(--fw-400);
+    color: hsl(var(--clr-text-body));
+    background: hsl(var(--clr-bg-body));
+}
